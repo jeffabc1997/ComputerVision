@@ -1,0 +1,6 @@
+# Image Alignment, RANSAC, SIFT, Image Segmentation
+
+## Image Alignment with RANSAC
+
+- A. Use OpenCV function or publicly available program(such as the one from http://www.vlfeat.org/) for SIFT interest point detection to extract the SIFT feature points from the above 4 images. Establish point correspondences between the SIFT feature points detected from the single-book images and the cluttered-book image by using the distance between the SIFT feature vectors as the matching score. Show your best point correspondence results with different distance thresholds (the number of correspondences should be larger than 500).
+- B. Apply the RANSAC program in problem1 to find the best matching homography transformation between each single-book image and the input image by using the SIFT features computed from problem 1. Show the detection result by showing the deviation vectors between the transformed feature points and the corresponding feature points on the input image. You may need to try different parameter setting in RANSAC to find the best matching result. Compare the parameter settings in SIFT feature and RANSAC and discuss the result.
